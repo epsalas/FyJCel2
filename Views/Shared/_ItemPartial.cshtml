@@ -1,0 +1,58 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    if(@User.Identity.Name == "administrador@gmail.com"){
+    
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Contacto" asp-action="Create">Clientes</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Contacto" asp-action="Index">Mant. del cliente</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Producto" asp-action="RegProducto">Registro Producto</a>
+    </li> 
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Producto" asp-action="MantProducto">Mant. Producto</a>
+    </li>  
+    
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Pedido" asp-action="Pedido">Estado de Ventas</a>
+    </li>
+  
+    }else if(@User.Identity.Name == "administrador2@gmail.com"){
+    
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Contacto" asp-action="Create">Clientes</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Contacto" asp-action="Index">Mant. del cliente</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Producto" asp-action="RegProducto">Registro Producto</a>
+    </li> 
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Producto" asp-action="MantProducto">Mant. Producto</a>
+    </li>  
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Producto" asp-action="ListProducto">Delivery</a>
+    </li>    
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Reclamo" asp-action="CrearReclamo">Reclamos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Pedido" asp-action="Pedido">Estado de Ventas</a>
+    </li>
+    }else{
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Producto" asp-action="ListProducto">Delivery</a>
+    </li>    
+    <li class="nav-item">
+        <a class="nav-link text-dark " asp-area="" asp-controller="Reclamo" asp-action="CrearReclamo">Reclamos</a>
+    </li>
+    
+    }
+}
