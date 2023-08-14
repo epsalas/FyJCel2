@@ -1,7 +1,7 @@
-const { exec } = require('child_process');
+import { exec } from 'child_process';
 
 // Ruta al archivo Startup.cs
-const startupPath = '/Startup.cs';  // Cambia esto a la ruta correcta
+const startupPath = 'Startup.cs';  // Cambia esto a la ruta correcta
 
 // Comando para ejecutar el archivo Startup.cs usando dotnet
 const dotnetCommand = `dotnet run ${startupPath}`;
