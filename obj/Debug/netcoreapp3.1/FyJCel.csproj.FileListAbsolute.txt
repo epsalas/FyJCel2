@@ -353,3 +353,5 @@ E:\GITHUB\CLON\FYJCEL\FyJCel2\obj\Debug\netcoreapp3.1\FyJCel.csproj.CopyComplete
 E:\GITHUB\CLON\FYJCEL\FyJCel2\obj\Debug\netcoreapp3.1\FyJCel.dll
 E:\GITHUB\CLON\FYJCEL\FyJCel2\obj\Debug\netcoreapp3.1\FyJCel.pdb
 E:\GITHUB\CLON\FYJCEL\FyJCel2\obj\Debug\netcoreapp3.1\FyJCel.genruntimeconfig.cache
+E:\GITHUB\CLON\FYJCEL\FyJCel2\bin\Debug\netcoreapp3.1\package-lock.json
+E:\GITHUB\CLON\FYJCEL\FyJCel2\bin\Debug\netcoreapp3.1\package.json
