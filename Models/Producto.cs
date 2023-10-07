@@ -24,7 +24,7 @@ namespace FyJCel.Models
         public string prod_imagen { get; set; }
 
         [Column("prod_precio")]
-        public decimal prod_precio { get; set; }
+        public string prod_precio { get; set; }
 
         [NotMapped]
         public string Mensaje { get; set; }

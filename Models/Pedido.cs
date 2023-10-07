@@ -23,7 +23,7 @@ namespace FyJCel.Models
 
         [Required(ErrorMessage = "Please enter el precio")]
         [Column("pedi_precio")]
-        public decimal pedi_precio { get; set; }
+        public string pedi_precio { get; set; }
 
         [Column("pedi_cantidad")]
         public int pedi_cantidad { get; set; }
