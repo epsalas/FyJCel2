@@ -4,7 +4,7 @@ import { exec } from 'child_process';
 const startupPath = 'Startup.cs';  // Cambia esto a la ruta correcta
 
 // Comando para ejecutar el archivo Startup.cs usando dotnet
-const dotnetCommand = `dotnet run ${startupPath}`;
+const dotnetCommand = `dotnet run`;
 
 // Ejecutar el comando
 exec(dotnetCommand, (error, stdout, stderr) => {
